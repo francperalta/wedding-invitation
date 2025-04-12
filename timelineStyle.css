@@ -1,0 +1,189 @@
+.elegant-timeline {
+  max-width: 720px;
+  margin:auto;
+  padding: 0 20px;
+  font-family: 'Dreaming';
+}
+
+.elegant-timeline h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-family: 'Bimbo Whiteboard';
+  color: #244152
+}
+
+.timeline {
+  color: #244152;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.event {
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.event.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.time {
+  width: 100px;
+  text-align: right;
+  font-size: 1.3rem;
+  margin-right: 20px;
+  color: #7d7d7d;
+  flex-shrink: 0;
+}
+
+.icon {
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #244152;
+  z-index: 1;
+}
+.timeline .event:nth-child(2) .icon {
+  transform: translateX(50%);
+}
+
+.details {
+  background: #C9D9C3;
+  padding: 16px 24px;
+  border-radius: 6px;
+  border-left: 7px solid #D6CDEA;
+  flex: 1;
+  max-width: 60%;
+}
+
+.details .title {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+.details .location {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #666;
+}
+
+/* Alternating Events */
+.event:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.event:nth-child(odd) .time {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.event:nth-child(odd) .icon {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.event:nth-child(odd) .details {
+  border-left: none;
+  border-right: 7px solid #C9D9C3;
+  text-align: left;
+  background-color: #D6CDEA;
+}
+
+.event .details {
+  color: #244152;
+  text-align: right;
+}
+
+.event .title {
+  color: #244152; /* White color for title */
+}
+
+.event .time {
+  color: #244152; /* Light gray color for time */
+}
+
+.icon i {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .event {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .text-section h2{
+    font-size: 3rem !important;
+  }
+  .text-section img{
+    height: 100% !important;
+  }
+  .attire-images img{
+    height: 250px !important;
+  }
+  .attire-container{
+    flex-wrap: wrap;
+  }
+  .hero{
+    background: url("./asset/header1.png") no-repeat 50% 50% !important;
+    background-size: contain !important;
+  }
+  #animatedIcon{
+    height: 50px !important;
+  }
+  .elegant-timeline h2{
+    font-size: 4rem !important;
+  }
+  .content p{
+    font-size: 1rem !important;
+  }
+  .text-copy{
+    font-size: 1.3rem !important;
+  }
+  .timeline::before {
+    left: 20px;
+    transform: none;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .time {
+    text-align: left;
+    margin-bottom: 6px;
+  }
+
+  .details {
+    max-width: 100%;
+  }
+
+  .event:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .event:nth-child(odd) .time {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .event:nth-child(odd) .icon {
+    margin-left: 0;
+  }
+
+  .event:nth-child(odd) .details {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
