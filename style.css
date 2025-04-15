@@ -66,7 +66,6 @@ img{
     text-transform: uppercase;
     font-family: "Cinzel", serif;
     font-size: 30px;
-    font-weight: 600;
     line-height: 18px;
     padding : 4px 2px 0 2px;
     background-color: #000;
@@ -115,7 +114,6 @@ img{
     text-transform: uppercase;
     font-family: "Bimbo Whiteboard";
     font-size: 30px;
-    font-weight: 600;
     color: #244152;
     transition: color 0.3s;
 }
@@ -200,7 +198,6 @@ img{
 .index span {
     font-family: "Cinzel", serif;
     font-size: 20px;
-    font-weight: 600;
     line-height: 12px;
     width: 12px;
     display: flex;
@@ -216,6 +213,22 @@ img{
     background-color: #ff00ff;
 }
 
+footer{
+    background-color: #FADADD;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #244152;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Dreaming';
+}
+
+.note{
+    font-size: 1rem !important;
+    color: grey;
+    padding-top: 1rem;
+}
 
 @media (max-width: 900px) {
     .sticky {

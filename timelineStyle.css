@@ -8,7 +8,6 @@
 .elegant-timeline h2 {
   text-align: center;
   font-size: 5rem;
-  font-weight: normal;
   letter-spacing: 1px;
   font-family: 'Bimbo Whiteboard';
   color: #244152
@@ -155,7 +154,9 @@
     left: 20px;
     transform: none;
   }
-
+  .note{
+    font-size: .6rem !important;
+  }
   .icon {
     display: none;
   }
