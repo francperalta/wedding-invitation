@@ -180,8 +180,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1000);
     }
     startCountdown("Jun 11, 2025 01:01:01");
-
+    const password = "25250611"; 
+    const userInput = prompt("This page is just for our special guests 💌\nPlease enter the password to continue:");
+        if (userInput === password) {
+          document.getElementById("content").style.display = "block";
+        } else {
+          document.body.innerHTML = "<h2>Access Denied ❌</h2>";
+        }
 });
+
+
 
 
 

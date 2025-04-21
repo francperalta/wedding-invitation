@@ -115,6 +115,7 @@
 
 .icon i {
   font-size: 30px;
+  font-weight: 900 !important;
 }
 
 @media (max-width: 768px) {
